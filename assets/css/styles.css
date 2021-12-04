@@ -108,7 +108,7 @@ img{
 }
 
 .bd-grid{
-    max-width: 1024px;
+    max-width: auto;
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -199,10 +199,12 @@ img{
 }
 .home__data{
     align-self: center;
+    margin-left: var(--mb-5);
 }
 .home__title{
     font-size: var(--big-font-size);
-    margin-bottom: var(--mb-5);
+    margin-bottom: var(--mb-2);
+    margin-top: var(--mb-1);
 }
 .home__title-color{
     color: var(--first-color);
@@ -210,6 +212,7 @@ img{
 .home__social{
     display: flex;
     flex-direction: column;
+    margin-top: var(--mb-2);
 }
 .home__social-icon{
     width: max-content;
