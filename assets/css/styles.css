@@ -12,7 +12,7 @@
     --second-color: #0E2431;
 }
 
-/* ===FONT y TYPOGRAFIA=== */
+/* ===FONT === */
 :root{
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
@@ -140,8 +140,8 @@ img{
         position: fixed;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
-        height: 100%;
+        width: 60%;
+        height: 80%;
         padding: 2rem;
         background-color: var(--second-color);
         transition: .5s;
@@ -167,12 +167,17 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
-.nav__logo{
-    color: var(--second-color);
+.nav-logo{
+    height: 50px;
+    width: 150px;
+    display: block;
+    position: relative;
+    left: 100px;   
 }
+
 .nav__toggle{
     color: var(--second-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
@@ -196,10 +201,15 @@ img{
 .home{
     height: calc(100vh - 3rem);
     row-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
 }
 .home__data{
     align-self: center;
-    margin-left: var(--mb-5);
+    margin-left: var(--mb-2);
+    margin-right: 5px;
+    margin-top: 70px;
 }
 .home__title{
     font-size: var(--big-font-size);
@@ -225,7 +235,8 @@ img{
 }
 .home__img{
     position: absolute;
-    right: 0;
+    top: 70px;
+    right: 5px;
     bottom: 0;
     width: 295px;
 }
@@ -417,6 +428,7 @@ img{
     }
     .home__data{
         align-self: flex-end;
+
     }
     .home__social{
         padding-top: 0;
